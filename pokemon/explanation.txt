@@ -1,0 +1,18 @@
+You are a Pokemon, hooray!
+Pokemon have it tough though. Every day in the field of battle they are susceptible to dangerous status effects. Some status effects are stronger than others.
+
+You can only be under the effects of one status effect at any time. That depends on the ranking of the status effect.
+In our case, the status effect hierarchy is as follows:
+
+Sleep > Paralyze > Confusion
+strength scores
+  sleep: 3, paralyze: 2, confusion: 1
+
+So, if you are both Paralyzed and Confused, Paralyze is your current status effect. Confusion is still active on you, but you won't get harmed by confusion, since the effects of Paralyze outweigh the effects on Confusion.
+Likewise, if you have all 3 status effects on you, Sleep's effects will outweigh Paralyze and Confusion, so Sleep will be your current active status effect. You will still have the durations of those effects on you and they will expire after each of their durations.
+
+You'll be writing a class to determine the strongest active status effect on a Pokemon at any given round. Each status effect has a name and duration (number of rounds) and can be applied at any time.
+
+Sleep duration 7
+Paralyze duration 4
+Confusion duration 10
